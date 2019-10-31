@@ -1,0 +1,78 @@
+2019-10-31 09:16:03 INFO  Combination:17 - [NOUVELLE PARTIE] game.run 
+2019-10-31 09:16:05 INFO  Combination:26 - [MODE CHALLENGER] defender.run
+2019-10-31 09:16:08 INFO  Combination:145 - [USER] Essai n°1
+2019-10-31 09:16:08 INFO  Combination:146 - Suggestion --> 5555
+2019-10-31 09:16:08 INFO  Combination:25 - Indication --> --+=
+2019-10-31 09:16:08 INFO  Combination:55 - [NOUVEL ESSAI] (2/6)
+2019-10-31 09:16:20 INFO  Combination:145 - [USER] Essai n°2
+2019-10-31 09:16:20 INFO  Combination:146 - Suggestion --> 3375
+2019-10-31 09:16:20 INFO  Combination:25 - Indication --> -=+=
+2019-10-31 09:16:20 INFO  Combination:55 - [NOUVEL ESSAI] (3/6)
+2019-10-31 09:16:29 INFO  Combination:145 - [USER] Essai n°3
+2019-10-31 09:16:29 INFO  Combination:146 - Suggestion --> 2385
+2019-10-31 09:16:29 INFO  Combination:25 - Indication --> -===
+2019-10-31 09:16:29 INFO  Combination:55 - [NOUVEL ESSAI] (4/6)
+2019-10-31 09:16:34 INFO  Combination:145 - [USER] Essai n°4
+2019-10-31 09:16:34 INFO  Combination:146 - Suggestion --> 1385
+2019-10-31 09:16:34 INFO  Combination:25 - Indication --> ====
+2019-10-31 09:16:34 INFO  Combination:44 - Joueur USER A GAGNÉ! Combinaison trouvée en 4 coups.
+2019-10-31 09:16:37 INFO  Combination:17 - [NOUVELLE PARTIE] game.run 
+2019-10-31 09:19:05 INFO  Combination:32 - [MODE DÉFENSEUR] defender.run
+2019-10-31 09:19:15 INFO  Combination:145 - [CPU] Essai n°1
+2019-10-31 09:19:15 INFO  Combination:146 - Suggestion --> 5555
+2019-10-31 09:19:15 INFO  Combination:25 - Indication --> -+-+
+2019-10-31 09:19:15 INFO  Combination:145 - [CPU] Essai n°2
+2019-10-31 09:19:15 INFO  Combination:146 - Suggestion --> 2727
+2019-10-31 09:19:15 INFO  Combination:25 - Indication --> -+++
+2019-10-31 09:19:15 INFO  Combination:145 - [CPU] Essai n°3
+2019-10-31 09:19:15 INFO  Combination:146 - Suggestion --> 1839
+2019-10-31 09:19:15 INFO  Combination:25 - Indication --> =+=-
+2019-10-31 09:19:15 INFO  Combination:145 - [CPU] Essai n°4
+2019-10-31 09:19:15 INFO  Combination:146 - Suggestion --> 1938
+2019-10-31 09:19:15 INFO  Combination:25 - Indication --> ====
+2019-10-31 09:19:15 INFO  Combination:44 - Joueur CPU A GAGNÉ! Combinaison trouvée en 4 coups.
+2019-10-31 09:19:48 INFO  Combination:17 - [NOUVELLE PARTIE] game.run 
+2019-10-31 09:19:50 INFO  Combination:38 - [MODE DUEL] dual.run
+2019-10-31 09:19:55 INFO  Combination:25 - combination.ask : userSecret = 1928
+2019-10-31 09:19:55 INFO  Combination:26 - combination.generate : cpuSecret = 1985
+2019-10-31 09:19:58 INFO  Combination:41 - combination.ask : userInput = 5555
+2019-10-31 09:19:58 INFO  Combination:42 - combination.generate : cpuInput = 5555
+2019-10-31 09:19:58 INFO  Combination:145 - [CPU] Essai n°1
+2019-10-31 09:19:58 INFO  Combination:146 - Suggestion --> 5555
+2019-10-31 09:19:58 INFO  Combination:51 - combination.compare : cpuReply = -+-+
+2019-10-31 09:19:58 INFO  Combination:25 - Indication --> -+-+
+2019-10-31 09:19:58 INFO  Combination:145 - [USER] Essai n°1
+2019-10-31 09:19:58 INFO  Combination:146 - Suggestion --> 5555
+2019-10-31 09:19:58 INFO  Combination:61 - combination.compare : userReply = -++=
+2019-10-31 09:19:58 INFO  Combination:25 - Indication --> -++=
+2019-10-31 09:19:58 INFO  Combination:55 - [NOUVEL ESSAI] (2/6)
+2019-10-31 09:20:44 INFO  Combination:41 - combination.ask : userInput = 3775
+2019-10-31 09:20:44 INFO  Combination:42 - combination.generate : cpuInput = 2727
+2019-10-31 09:20:44 INFO  Combination:145 - [CPU] Essai n°2
+2019-10-31 09:20:44 INFO  Combination:146 - Suggestion --> 2727
+2019-10-31 09:20:44 INFO  Combination:51 - combination.compare : cpuReply = -+=+
+2019-10-31 09:20:44 INFO  Combination:25 - Indication --> -+=+
+2019-10-31 09:20:44 INFO  Combination:145 - [USER] Essai n°2
+2019-10-31 09:20:44 INFO  Combination:146 - Suggestion --> 3775
+2019-10-31 09:20:44 INFO  Combination:61 - combination.compare : userReply = -++=
+2019-10-31 09:20:44 INFO  Combination:25 - Indication --> -++=
+2019-10-31 09:20:44 INFO  Combination:55 - [NOUVEL ESSAI] (3/6)
+2019-10-31 09:20:58 INFO  Combination:41 - combination.ask : userInput = 2885
+2019-10-31 09:20:58 INFO  Combination:42 - combination.generate : cpuInput = 1929
+2019-10-31 09:20:58 INFO  Combination:145 - [CPU] Essai n°3
+2019-10-31 09:20:58 INFO  Combination:146 - Suggestion --> 1929
+2019-10-31 09:20:58 INFO  Combination:51 - combination.compare : cpuReply = ===-
+2019-10-31 09:20:58 INFO  Combination:25 - Indication --> ===-
+2019-10-31 09:20:58 INFO  Combination:145 - [USER] Essai n°3
+2019-10-31 09:20:58 INFO  Combination:146 - Suggestion --> 2885
+2019-10-31 09:20:58 INFO  Combination:61 - combination.compare : userReply = -+==
+2019-10-31 09:20:58 INFO  Combination:25 - Indication --> -+==
+2019-10-31 09:20:58 INFO  Combination:55 - [NOUVEL ESSAI] (4/6)
+2019-10-31 09:21:04 INFO  Combination:41 - combination.ask : userInput = 1985
+2019-10-31 09:21:04 INFO  Combination:42 - combination.generate : cpuInput = 1928
+2019-10-31 09:21:04 INFO  Combination:145 - [CPU] Essai n°4
+2019-10-31 09:21:04 INFO  Combination:146 - Suggestion --> 1928
+2019-10-31 09:21:04 INFO  Combination:51 - combination.compare : cpuReply = ====
+2019-10-31 09:21:04 INFO  Combination:25 - Indication --> ====
+2019-10-31 09:21:04 INFO  Combination:44 - Joueur CPU A GAGNÉ! Combinaison trouvée en 4 coups.
+2019-10-31 09:21:15 INFO  Combination:80 - [FIN DE PARTIE] game.replay 
