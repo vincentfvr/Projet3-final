@@ -25,7 +25,7 @@ public class Combination {
         do {
             userComb = sc.nextLine(); // scanner
             if (userComb.length() != len) { // CONTROLE DU NOMBRE DE CHARACTÈRES SAISIS
-                System.out.println("Saisir une combinaison de " + len + " chiffre(s) (entre 1 et 9) et valider avec Entrée");
+                System.out.println("Saisir une combinaison de " + len + " chiffre(s) (entre 1 et 9) et valider avec ENTER");
                 charControl = true;
             } else if (userComb.length() == len) {
                 charControl = controls.run(userComb); // CONTROLE QUE TOUS LES CHARACTERES SOIENT DES CHIFFRES
@@ -140,9 +140,9 @@ public class Combination {
             System.out.println("SECRET-COMBINATION   : " + secret);
             logger.info("SECRET-COMBINATION : " + secret);
         }
-            System.out.println( "[" + player + "] Essai n°" + nbTry);
+            System.out.println( "[" + player + "] Essai " + nbTry);
             System.out.println("Suggestion --> " + suggest);
-            logger.info( "[" + player + "] Essai n°" + nbTry);
+            logger.info( "[" + player + "] Essai " + nbTry);
             logger.info("Suggestion --> " + suggest);
     }
 }

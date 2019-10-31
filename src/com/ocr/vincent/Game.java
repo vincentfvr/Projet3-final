@@ -20,8 +20,8 @@ public class Game {
         System.out.println("[NOUVELLE PARTIE]");
         logger.info("[NOUVELLE PARTIE] game.run ");
             do {
-                System.out.println("CHOISIR UN MODE DE JEU : 1 - CHALLENGER, 2 - DÉFENSEUR, 3 - DUEL");
-                if (Settings.devMode) System.out.println("[MODE DÉVELOPPEUR ACTIF]");
+                System.out.println("CHOISIR UN MODE DE JEU : 1 - CHALLENGER, 2 - DEFENDER, 3 - DUAL");
+                if (Settings.devMode) System.out.println("[MODE DEV ACTIF]");
                 modeStr = sc.nextLine();
                 b2 = controls.run(modeStr); // Controle de saisie : true -> erreur trouvée (char et non int)
                 // Lancement du mode de jeu choisi
@@ -36,12 +36,12 @@ public class Game {
                             challenger.run("USER", Settings.combLen);
                             break;
                         case 2: // MODE DEFENSEUR
-                            System.out.println("[MODE DÉFENSEUR] : Définir une combinaison secrète");
-                            logger.info("[MODE DÉFENSEUR] defender.run");
+                            System.out.println("[MODE DEFENDER] : Définir une combinaison secrète");
+                            logger.info("[MODE DEFENDER] defender.run");
                             Defender defender = new Defender();
                             defender.run("CPU", Settings.combLen);
                             break;
-                        case 3: // MODE DUEL
+                        case 3: // MODE DUAL
                             System.out.println("[MODE DUEL]");
                             logger.info("[MODE DUEL] dual.run");
                             Dual dual = new Dual();
@@ -50,7 +50,7 @@ public class Game {
                         case 123: // "123" active le mode Développeur false par defaut dans le .properties
                             //System.out.println("[MODE DÉVELOPPEUR ACTIF]");
                             Settings.devMode = true;
-                            logger.info("[MODE DÉVELOPPEUR ACTIF]");
+                            logger.info("[MODE DEV ACTIF]");
                             break;
                         default:
                             System.out.println("Erreur de saisie : Taper 1, 2 ou 3");
@@ -75,7 +75,7 @@ public class Game {
         String myChoiseStr; // Choix au format string pour le control de saisie
 
         do {
-            System.out.println("Rejouer une partie ? : Taper : 1 -> oui ou 2 -> non");
+            System.out.println("Rejouer une partie ? : Taper : 1 = oui ou 2 = non");
             myChoiseStr = sc.nextLine();
             b2 = controls.run(myChoiseStr); // Controle de saisie : true -> erreur trouvée (char et non int)
             if (!b2) {
