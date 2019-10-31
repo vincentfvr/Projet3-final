@@ -8,9 +8,9 @@ public class Main {
         Game game = new Game();
 
         do {
-            /** Load settings.properties */
+            // Load settings.properties
             Settings.load();
-            /** Start game and replay request */
+            // Start game and replay request
             game.play();
             replay = game.replay();
             if (replay) Settings.clear(); // Réinitialisation des Settings
