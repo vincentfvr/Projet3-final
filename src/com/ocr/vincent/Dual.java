@@ -18,20 +18,18 @@ public class Dual {
         boolean gameIsOver = false;
 
         System.out.println("Création de ma combinaison :");
-        System.out.println("¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨");
 
         String userSecret = combination.ask(len);  // Combinaison secrète saisie par l'utilisateur
         String cpuSecret = combination.generate(len); // combinaison secrète générée aléatoirement par CPU
+
         logger.info("combination.ask : userSecret = " + userSecret);
         logger.info("combination.generate : cpuSecret = " + cpuSecret);
 
-        String userReply=""; // Résultat après comparaison (+ - =)
-        String cpuReply=""; // Résultat après comparaison (+ - =)
+        String userReply; // Résultat après comparaison (+ - =)
+        String cpuReply; // Résultat après comparaison (+ - =)
 
         System.out.println("Joueur CPU a créé sa combinaison :");
-        System.out.println("----------------------------------");
-        // System.out.println(userSecret); // A SUPPRIMER
-        // System.out.println(cpuSecret); // A SUPPRIMER
+        combination.solution(cpuSecret); // en mode DEV
 
         do {
             nbTry += 1;
@@ -43,7 +41,7 @@ public class Dual {
             String player;
 
             if (!gameIsOver) {
-                /** TOUR ORDINATEUR*/
+                // TOUR ORDINATEUR
                 System.out.println("----------------------------------");
                 player = "CPU";
                 combination.display(userSecret, cpuInput, player, nbTry);
@@ -53,7 +51,7 @@ public class Dual {
             }
 
             if (!gameIsOver){
-                /** TOUR UTILISATEUR*/
+                // TOUR UTILISATEUR
                 System.out.println("----------------------------------");
                 player ="USER";
                 combination.display(cpuSecret, userInput, player, nbTry);

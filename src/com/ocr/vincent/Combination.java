@@ -19,7 +19,7 @@ public class Combination {
 
         Scanner sc = new Scanner(System.in);
         Controls controls = new Controls();
-        String userComb ="";
+        String userComb;
         boolean charControl = true;
 
         do {
@@ -136,13 +136,17 @@ public class Combination {
      * @param nbTry : compteur d'essai
      */
     public void display(String secret, String suggest, String player, int nbTry) {
-        if (devMode) {
-            System.out.println("SECRET-COMBINATION   : " + secret);
-            logger.info("SECRET-COMBINATION : " + secret);
-        }
             System.out.println( "[" + player + "] Essai " + nbTry);
             System.out.println("Suggestion --> " + suggest);
             logger.info( "[" + player + "] Essai " + nbTry);
             logger.info("Suggestion --> " + suggest);
     }
+
+    public void solution (String secret) {
+        if (devMode) {
+            System.out.println("SECRET-COMBINATION : " + secret);
+            logger.info("SECRET-COMBINATION : " + secret);
+        }
+    }
+
 }
