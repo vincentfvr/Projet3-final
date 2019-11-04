@@ -11,6 +11,9 @@ Sommaire
 	* [2. Compiler le projet Java](#compilingJavaProject)
 	* [3. Exécuter le projet Java](#runningJavaProject)
 * [Activer le mode développeur](#devMode)
+* [Fichier des propriétés](#settings)
+* [Fichier des logs](#logs)
+
 
 ## Build <a id="build"></a>
 Version finale du projet.
@@ -22,28 +25,28 @@ Exemple sur PC Windows 10
 ### Version JDK <a id="jdkVerion"></a>
 Vérifier la version dejà installée :
 
-- Ouvrir l'invite de commande (raccourci "Windows + X") : ou utiliser l'outil de recherche Windows  et taper ``cmd``
+- Ouvrir l'invite de commande : ou utiliser l'outil de recherche Windows (ou raccourci "Windows + R") et taper ``cmd``
 - pour JDK (Compiling Java Code), taper la commande suivante : ``javac -version``
 - pour JRE (Running Java Code), taper la commande suivante : ``java -version``
 
-Il faut 11.0.4 ou supérieure pour les deux. Sinon se rendre sur le site oracle suivant, puis téléchrger et installer la bonne version :
+Il faut 11.0.4 ou supérieure pour les deux. Sinon se rendre sur le site oracle suivant, puis télécharger et installer la bonne version :
 https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html
 
 
 ### Compiler le projet <a id="compilingJavaProject"></a>
 ATTENTION : pour les systèmes Unix (Linux, macOS) il faut remplacer le symbole de séparation de chemin ";" par ":")
 
-Toujours dans l'invite de commande : ouvrir le dossier contenant le projet commande cd Path
-Exemple de path ``C:\Users\nomUtilisateur\Documents\Workplace\Projet3-final``<br>
-Taper la commande ``cd C:\Users\nomUtilisateur\Documents\Workplace\Projet3-final``
-(Remplacer "nomUtilisateur" par le nom de l'utilisateur windows)
-et tapez la commande suivante :
-<br>
+Toujours dans l'invite de commande, ouvrir le dossier contenant le projet commande : ``cd [path]``<br>
+Remplacer [path] avec par exemple ``C:\Users\nomUtilisateur\Documents\Workplace\Projet3-final``<br>
+(Remplacer "nomUtilisateur" par le nom de l'utilisateur windows)<br>
+Taper ``cd C:\Users\nomUtilisateur\Documents\Workplace\Projet3-final``
+
+et tapez la commande suivante pour compiler le projet :<br>
 ``javac -d bin -sourcepath src -encoding UTF-8 -cp lib/log4j-1.2.17.jar src/com/ocr/vincent/Main.java``
 
 Un dossier nommé bin va être créé dans le dossier racine du projet, contenant les fichiers .class
 
-### Executer le projet  <a id="runningJavaProject"></a>
+### Exécuter le projet  <a id="runningJavaProject"></a>
 Enfin, toujours dans l'invite de commande et dans le dossier du projet, taper la commande suivante pour lancer le projet : <br>
 ``java -cp bin;lib/log4j-1.2.17.jar;log;resources com.ocr.vincent.Main``
 
@@ -62,3 +65,13 @@ ___
 Au moment de choisir un mode de jeux, taper ``123`` pour activer le mode développeur.
 Il est aussi possible d'activer ce mode par défaut en modifiant dans resources/settings.properties la valeur ``devMode = true``
 ___
+
+### Fichier des propriétés  resources/settings.properties<a id="settings"></a>
+``combLen`` valeur par défaut : 4. Nombre de chiffres de la combinaison secrète<br>
+``nbTryLimit`` valeur par défaut : 6. Nombre d'essais max pour tous les modes de jeux<br>
+``devMode`` valeur par défaut : false. Permet d'activité directement le mode développeur
+
+
+### Fichier des logs : log/loging.log<a id="logs"></a>
+Contient les logs de toutes les parties effectuées et des messages d'erreur.
+
