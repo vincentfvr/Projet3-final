@@ -28,7 +28,7 @@ public class Dual {
         String userReply; // Résultat après comparaison (+ - =)
         String cpuReply; // Résultat après comparaison (+ - =)
 
-        System.out.println("Joueur CPU a créé sa combinaison :");
+        System.out.println("Joueur CPU a créé sa combinaison");
         combination.solution(cpuSecret); // en mode DEV
 
         do {
