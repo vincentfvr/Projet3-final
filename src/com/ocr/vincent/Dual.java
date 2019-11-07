@@ -44,7 +44,7 @@ public class Dual {
                 // TOUR ORDINATEUR
                 System.out.println("----------------------------------");
                 player = "CPU";
-                combination.display(userSecret, cpuInput, player, nbTry);
+                combination.display(cpuInput, player, nbTry);
                 cpuReply = combination.compare(userSecret, cpuInput, player, len);
                 logger.info("combination.compare : cpuReply = " + cpuReply);
                 gameIsOver = result.run(player, userSecret, cpuReply , Settings.winReply, gameIsOver, nbTry);
@@ -54,7 +54,7 @@ public class Dual {
                 // TOUR UTILISATEUR
                 System.out.println("----------------------------------");
                 player ="USER";
-                combination.display(cpuSecret, userInput, player, nbTry);
+                combination.display(userInput, player, nbTry);
                 userReply = combination.compare(cpuSecret, userInput, player, len);
                 logger.info("combination.compare : userReply = " + userReply);
                 gameIsOver = result.run(player, cpuSecret, userReply , Settings.winReply, gameIsOver, nbTry);

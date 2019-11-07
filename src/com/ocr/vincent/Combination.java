@@ -45,7 +45,7 @@ public class Combination {
 
         for (int i = 0; i < len; i++) {
             do {
-                num = (int) (Math.random() * 10);     /** avec 0 < nb < 9 */
+                num = (int) (Math.random() * 10); // avec 0 < nb < 9 */
                 if (num >= 1) {
                     code += num;
                 }
@@ -130,18 +130,21 @@ public class Combination {
 
     /**
      * Affiche la proposition faite avec + le nombre d'essais
-     * @param secret : combinaison secrète (ne s'affiche qu'en mode développeur)
      * @param suggest : combinaison suggèrée
      * @param player : nom du joueur
      * @param nbTry : compteur d'essai
      */
-    public void display(String secret, String suggest, String player, int nbTry) {
+    public void display(String suggest, String player, int nbTry) {
             System.out.println( "[" + player + "] Essai " + nbTry);
             System.out.println("Suggestion --> " + suggest);
             logger.info( "[" + player + "] Essai " + nbTry);
             logger.info("Suggestion --> " + suggest);
     }
 
+    /**
+     * Affiche la combinaison secrète en mode développeur
+     * @param secret : combinaison secrète
+     */
     public void solution (String secret) {
         if (devMode) {
             System.out.println("SECRET-COMBINATION : " + secret);

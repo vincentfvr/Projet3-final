@@ -20,11 +20,11 @@ public class Result {
 
         String newLine = System.getProperty("line.separator");
 
-        /** Affichage des indications en fonction de la suggestion */
+        // Affichage des indications en fonction de la suggestion
             System.out.println("Indication --> " + theReply);
             logger.info("Indication --> " + theReply);
 
-        /** Affichage des indications en mode Développeur uniquement */
+        // Affichage des indications en mode Développeur uniquement
         if (Settings.devMode & player=="CPU") {
             System.out.println("maxValues : " + Settings.maxValues);
             System.out.println("minValues : " + Settings.minValues);
@@ -34,8 +34,7 @@ public class Result {
             logger.info("theValues : " + Settings.theValues);
         }
 
-        /** Affichage fin de partie : Partie gagnée, nouvel essai ou partie perdue (nombre d'essais dépassé) */
-
+        // Affichage fin de partie : Partie gagnée, nouvel essai ou partie perdue (nombre d'essais dépassé)
         if (theReply.contains(winReply)) {
             gameIsOver = true;
             System.out.println(newLine + "**********************************************************");
@@ -43,7 +42,7 @@ public class Result {
             System.out.println("**********************************************************");
             logger.info("Joueur " + player + " A GAGNÉ! Combinaison trouvée en " + nbTry + " coups.");
         } else {
-            //System.out.println("MAUVAISE COMBINAISON");
+
             if (nbTry == Settings.nbTryLimit) {
                 gameIsOver = true;
                 System.out.println(newLine + "[PARTIE PERDUE] Nombre d'essais dépassé (" + Settings.nbTryLimit + ")");

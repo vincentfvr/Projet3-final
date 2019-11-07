@@ -15,7 +15,7 @@ public class Defender extends Mode{
         do {
             nbTry += 1;
             input = combination.find(len);
-            combination.display (secret, input, player, nbTry);
+            combination.display (input, player, nbTry);
             reply = combination.compare(secret, input, player, len);
             gameIsOver = result.run(player, secret, reply , Settings.winReply, gameIsOver, nbTry);
         } while (!gameIsOver);
