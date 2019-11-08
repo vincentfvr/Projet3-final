@@ -1,0 +1,213 @@
+2019-11-04 17:20:38 INFO  Combination:21 - [NOUVELLE PARTIE] game.run 
+2019-11-04 17:20:44 INFO  Combination:53 - [MODE DEV ACTIF]
+2019-11-04 17:20:49 INFO  Combination:34 - [MODE CHALLENGER] defender.run
+2019-11-04 17:20:59 INFO  Combination:141 - SECRET-COMBINATION : 5889
+2019-11-04 17:20:59 INFO  Combination:145 - [USER] Essai 1
+2019-11-04 17:20:59 INFO  Combination:146 - Suggestion --> 5555
+2019-11-04 17:20:59 INFO  Combination:25 - Indication --> =+++
+2019-11-04 17:20:59 INFO  Combination:55 - [NOUVEL ESSAI] (2/6)
+2019-11-04 17:25:43 INFO  Combination:21 - [NOUVELLE PARTIE] game.run 
+2019-11-04 17:25:46 INFO  Combination:53 - [MODE DEV ACTIF]
+2019-11-04 17:25:52 INFO  Combination:34 - [MODE CHALLENGER] defender.run
+2019-11-04 17:26:39 INFO  Combination:21 - [NOUVELLE PARTIE] game.run 
+2019-11-04 17:26:40 INFO  Combination:34 - [MODE CHALLENGER] defender.run
+2019-11-04 17:26:47 INFO  Combination:21 - [NOUVELLE PARTIE] game.run 
+2019-11-04 17:26:52 INFO  Combination:53 - [MODE DEV ACTIF]
+2019-11-04 17:26:54 INFO  Combination:34 - [MODE CHALLENGER] defender.run
+2019-11-04 17:26:54 INFO  Combination:148 - SECRET-COMBINATION : 3761
+2019-11-04 17:27:21 INFO  Combination:141 - [USER] Essai 1
+2019-11-04 17:27:21 INFO  Combination:142 - Suggestion --> 5555
+2019-11-04 17:27:21 INFO  Combination:25 - Indication --> -++-
+2019-11-04 17:27:21 INFO  Combination:55 - [NOUVEL ESSAI] (2/6)
+2019-11-04 17:27:27 INFO  Combination:141 - [USER] Essai 2
+2019-11-04 17:27:27 INFO  Combination:142 - Suggestion --> 3761
+2019-11-04 17:27:27 INFO  Combination:25 - Indication --> ====
+2019-11-04 17:27:27 INFO  Combination:44 - Joueur USER A GAGNÉ! Combinaison trouvée en 2 coups.
+2019-11-04 17:27:34 INFO  Combination:89 - [FIN DE PARTIE] game.replay 
+2019-11-04 17:32:39 INFO  Combination:21 - [NOUVELLE PARTIE] game.run 
+2019-11-04 17:32:41 INFO  Combination:53 - [MODE DEV ACTIF]
+2019-11-04 17:32:46 INFO  Combination:34 - [MODE CHALLENGER] defender.run
+2019-11-04 17:32:46 INFO  Combination:148 - SECRET-COMBINATION : 9894
+2019-11-04 17:33:07 INFO  Combination:141 - [USER] Essai 1
+2019-11-04 17:33:07 INFO  Combination:142 - Suggestion --> 9894
+2019-11-04 17:33:07 INFO  Combination:25 - Indication --> ====
+2019-11-04 17:33:07 INFO  Combination:44 - Joueur USER A GAGNÉ! Combinaison trouvée en 1 coups.
+2019-11-04 17:33:13 INFO  Combination:21 - [NOUVELLE PARTIE] game.run 
+2019-11-04 17:33:16 INFO  Combination:46 - [MODE DUEL] dual.run
+2019-11-04 17:33:22 INFO  Combination:26 - combination.ask : userSecret = 1982
+2019-11-04 17:33:22 INFO  Combination:27 - combination.generate : cpuSecret = 1688
+2019-11-04 17:33:56 INFO  Combination:21 - [NOUVELLE PARTIE] game.run 
+2019-11-04 17:33:57 INFO  Combination:46 - [MODE DUEL] dual.run
+2019-11-04 17:34:01 INFO  Combination:25 - combination.ask : userSecret = 1956
+2019-11-04 17:34:01 INFO  Combination:26 - combination.generate : cpuSecret = 5793
+2019-11-04 17:38:02 INFO  Combination:21 - [NOUVELLE PARTIE] game.run 
+2019-11-04 17:38:17 INFO  Combination:46 - [MODE DUEL] dual.run
+2019-11-04 17:38:20 INFO  Combination:148 - SECRET-COMBINATION : 6475
+2019-11-04 17:38:20 INFO  Combination:25 - combination.ask : userSecret = 1698
+2019-11-04 17:38:20 INFO  Combination:26 - combination.generate : cpuSecret = 6475
+2019-11-04 17:40:37 INFO  Combination:21 - [NOUVELLE PARTIE] game.run 
+2019-11-04 17:40:46 INFO  Combination:46 - [MODE DUEL] dual.run
+2019-11-04 17:40:48 INFO  Combination:148 - SECRET-COMBINATION : 5987
+2019-11-04 17:40:48 INFO  Combination:25 - combination.ask : userSecret = 1698
+2019-11-04 17:40:48 INFO  Combination:26 - combination.generate : cpuSecret = 5987
+2019-11-04 17:42:05 INFO  Combination:21 - [NOUVELLE PARTIE] game.run 
+2019-11-04 17:42:08 INFO  Combination:46 - [MODE DUEL] dual.run
+2019-11-04 17:42:10 INFO  Combination:25 - combination.ask : userSecret = 1698
+2019-11-04 17:42:10 INFO  Combination:26 - combination.generate : cpuSecret = 5381
+2019-11-04 17:42:10 INFO  Combination:148 - SECRET-COMBINATION : 5381
+2019-11-04 17:42:20 INFO  Combination:123 - CPU_COMB -> 5
+2019-11-04 17:42:20 INFO  Combination:125 - Char 1 = 5 max 9 min 1
+2019-11-04 17:42:20 INFO  Combination:123 - CPU_COMB -> 55
+2019-11-04 17:42:20 INFO  Combination:125 - Char 2 = 5 max 9 min 1
+2019-11-04 17:42:20 INFO  Combination:123 - CPU_COMB -> 555
+2019-11-04 17:42:20 INFO  Combination:125 - Char 3 = 5 max 9 min 1
+2019-11-04 17:42:20 INFO  Combination:123 - CPU_COMB -> 5555
+2019-11-04 17:42:20 INFO  Combination:125 - Char 4 = 5 max 9 min 1
+2019-11-04 17:42:20 INFO  Combination:39 - combination.ask : userInput = 5382
+2019-11-04 17:42:20 INFO  Combination:40 - combination.generate : cpuInput = 5555
+2019-11-04 17:42:20 INFO  Combination:141 - [CPU] Essai 1
+2019-11-04 17:42:20 INFO  Combination:142 - Suggestion --> 5555
+2019-11-04 17:42:20 INFO  Combination:49 - combination.compare : cpuReply = -+++
+2019-11-04 17:42:20 INFO  Combination:25 - Indication --> -+++
+2019-11-04 17:42:20 INFO  Combination:32 - maxValues : [4, 9, 9, 9]
+2019-11-04 17:42:20 INFO  Combination:33 - minValues : [1, 6, 6, 6]
+2019-11-04 17:42:20 INFO  Combination:34 - theValues : [0, 0, 0, 0]
+2019-11-04 17:42:20 INFO  Combination:141 - [USER] Essai 1
+2019-11-04 17:42:20 INFO  Combination:142 - Suggestion --> 5382
+2019-11-04 17:42:20 INFO  Combination:59 - combination.compare : userReply = ===-
+2019-11-04 17:42:20 INFO  Combination:25 - Indication --> ===-
+2019-11-04 17:42:20 INFO  Combination:55 - [NOUVEL ESSAI] (2/6)
+2019-11-04 17:42:32 INFO  Combination:123 - CPU_COMB -> 2
+2019-11-04 17:42:32 INFO  Combination:125 - Char 1 = 2 max 4 min 1
+2019-11-04 17:42:32 INFO  Combination:123 - CPU_COMB -> 27
+2019-11-04 17:42:32 INFO  Combination:125 - Char 2 = 7 max 9 min 6
+2019-11-04 17:42:32 INFO  Combination:123 - CPU_COMB -> 277
+2019-11-04 17:42:32 INFO  Combination:125 - Char 3 = 7 max 9 min 6
+2019-11-04 17:42:32 INFO  Combination:123 - CPU_COMB -> 2777
+2019-11-04 17:42:32 INFO  Combination:125 - Char 4 = 7 max 9 min 6
+2019-11-04 17:42:32 INFO  Combination:39 - combination.ask : userInput = 5381
+2019-11-04 17:42:32 INFO  Combination:40 - combination.generate : cpuInput = 2777
+2019-11-04 17:42:32 INFO  Combination:141 - [CPU] Essai 2
+2019-11-04 17:42:32 INFO  Combination:142 - Suggestion --> 2777
+2019-11-04 17:42:32 INFO  Combination:49 - combination.compare : cpuReply = --++
+2019-11-04 17:42:32 INFO  Combination:25 - Indication --> --++
+2019-11-04 17:42:32 INFO  Combination:32 - maxValues : [1, 6, 9, 9]
+2019-11-04 17:42:32 INFO  Combination:33 - minValues : [1, 6, 8, 8]
+2019-11-04 17:42:32 INFO  Combination:34 - theValues : [0, 0, 0, 0]
+2019-11-04 17:42:32 INFO  Combination:141 - [USER] Essai 2
+2019-11-04 17:42:32 INFO  Combination:142 - Suggestion --> 5381
+2019-11-04 17:42:32 INFO  Combination:59 - combination.compare : userReply = ====
+2019-11-04 17:42:32 INFO  Combination:25 - Indication --> ====
+2019-11-04 17:42:32 INFO  Combination:44 - Joueur USER A GAGNÉ! Combinaison trouvée en 2 coups.
+2019-11-04 17:42:36 INFO  Combination:89 - [FIN DE PARTIE] game.replay 
+2019-11-06 14:36:07 INFO  Combination:21 - [NOUVELLE PARTIE] game.run 
+2019-11-06 14:36:09 INFO  Combination:53 - [MODE DEV ACTIF]
+2019-11-06 14:36:13 INFO  Combination:46 - [MODE DUEL] dual.run
+2019-11-06 14:36:16 INFO  Combination:25 - combination.ask : userSecret = 1365
+2019-11-06 14:36:16 INFO  Combination:26 - combination.generate : cpuSecret = 7972
+2019-11-06 14:36:16 INFO  Combination:148 - SECRET-COMBINATION : 7972
+2019-11-06 14:37:04 INFO  Combination:123 - CPU_COMB -> 5
+2019-11-06 14:37:04 INFO  Combination:125 - Char 1 = 5 max 9 min 1
+2019-11-06 14:37:04 INFO  Combination:123 - CPU_COMB -> 55
+2019-11-06 14:37:04 INFO  Combination:125 - Char 2 = 5 max 9 min 1
+2019-11-06 14:37:04 INFO  Combination:123 - CPU_COMB -> 555
+2019-11-06 14:37:04 INFO  Combination:125 - Char 3 = 5 max 9 min 1
+2019-11-06 14:37:04 INFO  Combination:123 - CPU_COMB -> 5555
+2019-11-06 14:37:04 INFO  Combination:125 - Char 4 = 5 max 9 min 1
+2019-11-06 14:37:04 INFO  Combination:39 - combination.ask : userInput = 5555
+2019-11-06 14:37:04 INFO  Combination:40 - combination.generate : cpuInput = 5555
+2019-11-06 14:37:04 INFO  Combination:141 - [CPU] Essai 1
+2019-11-06 14:37:04 INFO  Combination:142 - Suggestion --> 5555
+2019-11-06 14:37:04 INFO  Combination:49 - combination.compare : cpuReply = --+=
+2019-11-06 14:37:04 INFO  Combination:25 - Indication --> --+=
+2019-11-06 14:37:04 INFO  Combination:32 - maxValues : [4, 4, 9, 0]
+2019-11-06 14:37:04 INFO  Combination:33 - minValues : [1, 1, 6, 0]
+2019-11-06 14:37:04 INFO  Combination:34 - theValues : [0, 0, 0, 5]
+2019-11-06 14:37:04 INFO  Combination:141 - [USER] Essai 1
+2019-11-06 14:37:04 INFO  Combination:142 - Suggestion --> 5555
+2019-11-06 14:37:04 INFO  Combination:59 - combination.compare : userReply = +++-
+2019-11-06 14:37:04 INFO  Combination:25 - Indication --> +++-
+2019-11-06 14:37:04 INFO  Combination:55 - [NOUVEL ESSAI] (2/6)
+2019-11-06 14:37:16 INFO  Combination:123 - CPU_COMB -> 2
+2019-11-06 14:37:16 INFO  Combination:125 - Char 1 = 2 max 4 min 1
+2019-11-06 14:37:16 INFO  Combination:123 - CPU_COMB -> 22
+2019-11-06 14:37:16 INFO  Combination:125 - Char 2 = 2 max 4 min 1
+2019-11-06 14:37:16 INFO  Combination:123 - CPU_COMB -> 227
+2019-11-06 14:37:16 INFO  Combination:125 - Char 3 = 7 max 9 min 6
+2019-11-06 14:37:16 INFO  Combination:123 - CPU_COMB -> 2275
+2019-11-06 14:37:16 INFO  Combination:125 - Char 4 = 5 max 0 min 0
+2019-11-06 14:37:16 INFO  Combination:39 - combination.ask : userInput = 7972
+2019-11-06 14:37:16 INFO  Combination:40 - combination.generate : cpuInput = 2275
+2019-11-06 14:37:16 INFO  Combination:141 - [CPU] Essai 2
+2019-11-06 14:37:16 INFO  Combination:142 - Suggestion --> 2275
+2019-11-06 14:37:16 INFO  Combination:49 - combination.compare : cpuReply = -+-=
+2019-11-06 14:37:16 INFO  Combination:25 - Indication --> -+-=
+2019-11-06 14:37:16 INFO  Combination:32 - maxValues : [1, 4, 6, 0]
+2019-11-06 14:37:16 INFO  Combination:33 - minValues : [1, 3, 6, 0]
+2019-11-06 14:37:16 INFO  Combination:34 - theValues : [0, 0, 0, 5]
+2019-11-06 14:37:16 INFO  Combination:141 - [USER] Essai 2
+2019-11-06 14:37:16 INFO  Combination:142 - Suggestion --> 7972
+2019-11-06 14:37:16 INFO  Combination:59 - combination.compare : userReply = ====
+2019-11-06 14:37:16 INFO  Combination:25 - Indication --> ====
+2019-11-06 14:37:16 INFO  Combination:44 - Joueur USER A GAGNÉ! Combinaison trouvée en 2 coups.
+2019-11-06 14:37:23 INFO  Combination:89 - [FIN DE PARTIE] game.replay 
+2019-11-07 16:45:46 INFO  Combination:21 - [NOUVELLE PARTIE] game.run 
+2019-11-07 16:45:49 INFO  Combination:53 - [MODE DEV ACTIF]
+2019-11-07 16:45:51 INFO  Combination:40 - [MODE DEFENDER] defender.run
+2019-11-07 16:45:51 INFO  Combination:123 - CPU_COMB -> 5
+2019-11-07 16:45:51 INFO  Combination:125 - Char 1 = 5 max 9 min 1
+2019-11-07 16:45:51 INFO  Combination:123 - CPU_COMB -> 55
+2019-11-07 16:45:51 INFO  Combination:125 - Char 2 = 5 max 9 min 1
+2019-11-07 16:45:51 INFO  Combination:123 - CPU_COMB -> 555
+2019-11-07 16:45:51 INFO  Combination:125 - Char 3 = 5 max 9 min 1
+2019-11-07 16:45:51 INFO  Combination:123 - CPU_COMB -> 5555
+2019-11-07 16:45:51 INFO  Combination:125 - Char 4 = 5 max 9 min 1
+2019-11-07 16:45:51 INFO  Combination:141 - [CPU] Essai 1
+2019-11-07 16:45:51 INFO  Combination:142 - Suggestion --> 5555
+2019-11-07 16:45:51 INFO  Combination:25 - Indication --> +++-
+2019-11-07 16:45:51 INFO  Combination:32 - maxValues : [9, 9, 9, 4]
+2019-11-07 16:45:51 INFO  Combination:33 - minValues : [6, 6, 6, 1]
+2019-11-07 16:45:51 INFO  Combination:34 - theValues : [0, 0, 0, 0]
+2019-11-07 16:45:51 INFO  Combination:123 - CPU_COMB -> 7
+2019-11-07 16:45:51 INFO  Combination:125 - Char 1 = 7 max 9 min 6
+2019-11-07 16:45:51 INFO  Combination:123 - CPU_COMB -> 77
+2019-11-07 16:45:51 INFO  Combination:125 - Char 2 = 7 max 9 min 6
+2019-11-07 16:45:51 INFO  Combination:123 - CPU_COMB -> 777
+2019-11-07 16:45:51 INFO  Combination:125 - Char 3 = 7 max 9 min 6
+2019-11-07 16:45:51 INFO  Combination:123 - CPU_COMB -> 7772
+2019-11-07 16:45:51 INFO  Combination:125 - Char 4 = 2 max 4 min 1
+2019-11-07 16:45:51 INFO  Combination:141 - [CPU] Essai 2
+2019-11-07 16:45:51 INFO  Combination:142 - Suggestion --> 7772
+2019-11-07 16:45:51 INFO  Combination:25 - Indication --> +++=
+2019-11-07 16:45:51 INFO  Combination:32 - maxValues : [9, 9, 9, 0]
+2019-11-07 16:45:51 INFO  Combination:33 - minValues : [8, 8, 8, 0]
+2019-11-07 16:45:51 INFO  Combination:34 - theValues : [0, 0, 0, 2]
+2019-11-07 16:45:51 INFO  Combination:123 - CPU_COMB -> 9
+2019-11-07 16:45:51 INFO  Combination:125 - Char 1 = 9 max 9 min 8
+2019-11-07 16:45:51 INFO  Combination:123 - CPU_COMB -> 98
+2019-11-07 16:45:51 INFO  Combination:125 - Char 2 = 8 max 9 min 8
+2019-11-07 16:45:51 INFO  Combination:123 - CPU_COMB -> 989
+2019-11-07 16:45:51 INFO  Combination:125 - Char 3 = 9 max 9 min 8
+2019-11-07 16:45:51 INFO  Combination:123 - CPU_COMB -> 9892
+2019-11-07 16:45:51 INFO  Combination:125 - Char 4 = 2 max 0 min 0
+2019-11-07 16:45:51 INFO  Combination:141 - [CPU] Essai 3
+2019-11-07 16:45:51 INFO  Combination:142 - Suggestion --> 9892
+2019-11-07 16:45:51 INFO  Combination:25 - Indication --> =+-=
+2019-11-07 16:45:51 INFO  Combination:32 - maxValues : [0, 9, 8, 0]
+2019-11-07 16:45:51 INFO  Combination:33 - minValues : [0, 9, 8, 0]
+2019-11-07 16:45:51 INFO  Combination:34 - theValues : [9, 0, 0, 2]
+2019-11-07 16:45:51 INFO  Combination:123 - CPU_COMB -> 9
+2019-11-07 16:45:51 INFO  Combination:125 - Char 1 = 9 max 0 min 0
+2019-11-07 16:45:51 INFO  Combination:123 - CPU_COMB -> 99
+2019-11-07 16:45:51 INFO  Combination:125 - Char 2 = 9 max 9 min 9
+2019-11-07 16:45:51 INFO  Combination:123 - CPU_COMB -> 998
+2019-11-07 16:45:51 INFO  Combination:125 - Char 3 = 8 max 8 min 8
+2019-11-07 16:45:51 INFO  Combination:123 - CPU_COMB -> 9982
+2019-11-07 16:45:51 INFO  Combination:125 - Char 4 = 2 max 0 min 0
+2019-11-07 16:45:51 INFO  Combination:141 - [CPU] Essai 4
+2019-11-07 16:45:51 INFO  Combination:142 - Suggestion --> 9982
+2019-11-07 16:45:51 INFO  Combination:25 - Indication --> ====
+2019-11-07 16:45:51 INFO  Combination:32 - maxValues : [0, 0, 0, 0]
+2019-11-07 16:45:51 INFO  Combination:33 - minValues : [0, 0, 0, 0]
+2019-11-07 16:45:51 INFO  Combination:34 - theValues : [9, 9, 8, 2]
+2019-11-07 16:45:51 INFO  Combination:43 - Joueur CPU A GAGNÉ! Combinaison trouvée en 4 coups.
