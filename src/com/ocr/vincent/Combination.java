@@ -135,10 +135,12 @@ public class Combination {
      * @param nbTry : compteur d'essai
      */
     public void display(String suggest, String player, int nbTry) {
-            System.out.println( "[" + player + "] Essai " + nbTry);
-            System.out.println("Suggestion --> " + suggest);
-            logger.info( "[" + player + "] Essai " + nbTry);
-            logger.info("Suggestion --> " + suggest);
+        String newLine = System.getProperty("line.separator");
+
+        System.out.println( newLine + "[" + player + "] Essai " + nbTry + "/" + Settings.nbTryLimit);
+        System.out.println("Suggestion --> " + suggest);
+        logger.info( "[" + player + "] Essai " + nbTry);
+        logger.info("Suggestion --> " + suggest);
     }
 
     /**

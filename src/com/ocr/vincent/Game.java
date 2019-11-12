@@ -17,7 +17,6 @@ public class Game {
         Scanner sc = new Scanner(System.in);
         Controls controls = new Controls();
 
-
         System.out.println("[NOUVELLE PARTIE]");
         logger.info("[NOUVELLE PARTIE] game.run ");
         do {

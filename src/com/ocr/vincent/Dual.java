@@ -2,6 +2,9 @@ package com.ocr.vincent;
 
 import org.apache.log4j.Logger;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class Dual {
 
     private static Logger logger = Logger.getLogger(Combination.class);
@@ -70,6 +73,7 @@ public class Dual {
             } else if (player.equals(player2)){
                 player = player1;
             }
+
         } while (!gameIsOver);
     }
 
@@ -86,18 +90,17 @@ public class Dual {
             int values[] = new int [4];
 
             do {
-                values[0] = min + (int)(Math.random() * ((max - min) + 1));
-                values[1] = min + (int)(Math.random() * ((max - min) + 1));
-                values[2] = min + (int)(Math.random() * ((max - min) + 1));
-                values[3] = min + (int)(Math.random() * ((max - min) + 1));
+                for (int i=0; i<4; i++) {
+                    values[i] = min + (int)(Math.random() * ((max - min) + 1));
+                }
                 userValue = values[0] + values[1];
                 cpuValue = values[2] + values[3];
+                System.out.println("Jet de dés : [USER] -> " + values[0] + " et " + values[1] + " [CPU] -> " + values[2] + " et " + values[3]);
+
                 if (cpuValue==userValue) {
-                    System.out.println("USER -> " + values[0] + " et " + values[1] + " CPU -> " + values[2] + " et " + values[3]);
                     System.out.println("Egalité, nouveau jet de dés");
-                } else {
-                    System.out.println("Jet de dés : [USER] -> " + values[0] + " et " + values[1] + " [CPU] --> " + values[2] + " et " + values[3]);
                 }
+
             } while (cpuValue==userValue);
             if (cpuValue>userValue) {
                 player1 = "CPU";

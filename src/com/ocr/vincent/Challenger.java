@@ -11,9 +11,9 @@ public class Challenger extends Mode {
     public void run(String player, int len) {
         secret = combination.generate(len); // random secrete combination
         combination.solution(secret); // en mode dev
-        System.out.println("Saisir une combinaison de " + len + " chiffre(s) (entre 1 et 9) et valider avec Entrée");
 
         do {
+            System.out.println("Saisir une combinaison de " + len + " chiffre(s) (entre 1 et 9) et valider avec ENTER");
             nbTry += 1;
             input = combination.ask(len);
             combination.display (input, player, nbTry);

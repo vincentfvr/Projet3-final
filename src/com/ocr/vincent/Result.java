@@ -50,12 +50,13 @@ public class Result {
                 System.out.println(newLine + "[PARTIE PERDUE] Nombre d'essais dépassé (" + Settings.nbTryLimit + ")");
                 System.out.println("La bonne combinaison était : " + secret);
                 logger.info("[PARTIE PERDUE] La bonne combinaison était : " + secret);
-            } else {
+            }
+            /**else {
                 if (player=="USER"){
                     System.out.println(newLine + "[NOUVEL ESSAI] (" + (nbTry + 1) + "/" + Settings.nbTryLimit + ")");
                     logger.info("[NOUVEL ESSAI] (" + (nbTry + 1) + "/" + Settings.nbTryLimit + ")");
                 }
-            }
+            } */
         }
         return gameIsOver;
     }
