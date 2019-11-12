@@ -65,7 +65,7 @@ Pour Git Bash : ``java -cp bin\;lib/log4j-1.2.17.jar\;log\;resources com.ocr.vin
 
 * ``1. MODE CHALLENGER`` : Le joueur CPU crée une combinaison, le joueur USER doit la retrouver 
 * ``2. MODE DEFENDER``: Le joueur USER crée une combinaison, le joueur CPU doit la retrouver
-* ``3. MODE DUAL``: Les 2 joueurs créent une combinaison, et font des propositions à tour de rôle.
+* ``3. MODE DUAL``: Les 2 joueurs créent une combinaison, et font des propositions à tour de rôle. Le choix du joueur qui fera la première proposition se fait de manière aléatoire sous forme d'un jet de deux dés. Le joueur qui obtient le plus grand score jouera en premier.
 
 Taper 1,2 ou 3 et valider avec la touche ENTER<br>
 A la fin d'une partie, possibilité d'en relancer une nouvelle ou de quitter. Taper 1 pour rejouer ou 2 pour quitter.

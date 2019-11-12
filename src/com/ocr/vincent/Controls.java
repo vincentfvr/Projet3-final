@@ -25,7 +25,7 @@ public class Controls {
         }
         if (b1) {
             System.out.println("Saisir uniquement des chiffres");
-            logger.info("Saisir uniquement des chiffres");
+            logger.info("[ERREUR DE SAISIE] Saisir uniquement des chiffres");
         }
         return b1;
     }

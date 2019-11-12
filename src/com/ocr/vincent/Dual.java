@@ -46,8 +46,6 @@ public class Dual {
                 cpuTry += 1;
                 String cpuInput = combination.find(len);
                 logger.info("combination.generate : cpuInput = " + cpuInput);
-                //System.out.println("----------------------------------");
-                //player = "CPU";
                 combination.display(cpuInput, player, cpuTry);
                 cpuReply = combination.compare(userSecret, cpuInput, player, len);
                 inputReply = result.ask(cpuReply, len, userSecret, cpuInput);
@@ -61,13 +59,10 @@ public class Dual {
                 System.out.println("Saisir votre suggestion :");
                 String userInput = combination.ask(len);
                 logger.info("combination.ask : userInput = " + userInput);
-                //System.out.println("----------------------------------");
-                //player ="USER";
                 combination.display(userInput, player, userTry);
                 userReply = combination.compare(cpuSecret, userInput, player, len);
                 logger.info("combination.compare : userReply = " + userReply);
                 gameIsOver = result.run(player, cpuSecret, userReply , Settings.winReply, gameIsOver, userTry);
-                //System.out.println("----------------------------------");
             }
 
             if (player.equals(player1)) {

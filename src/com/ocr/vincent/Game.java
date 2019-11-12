@@ -17,16 +17,18 @@ public class Game {
         Scanner sc = new Scanner(System.in);
         Controls controls = new Controls();
 
+
         System.out.println("[NOUVELLE PARTIE]");
         logger.info("[NOUVELLE PARTIE] game.run ");
-            do {
+        do {
+            try {
                 System.out.println("CHOISIR UN MODE DE JEU : 1 - CHALLENGER, 2 - DEFENDER, 3 - DUAL");
                 if (Settings.devMode) System.out.println("[MODE DEV ACTIF]");
                 modeStr = sc.nextLine();
                 b2 = controls.run(modeStr); // Controle de saisie : true -> erreur trouvée (char et non int)
                 // Lancement du mode de jeu choisi
 
-                if (!b2)   {
+                if (!b2) {
                     mode = Integer.parseInt(modeStr);
                     switch (mode) {
                         case 1: // MODE CHALLENGER
@@ -58,8 +60,11 @@ public class Game {
                             break;
                     }
                 }
-            } while (mode < 1 || mode > 4);
-        }
+            } catch (Exception NumberFormatException) {
+
+            }
+        } while (mode < 1 || mode > 4);
+    }
 
     /**
      * Méthode permettant de relancer une partie ou quitter
@@ -72,24 +77,28 @@ public class Game {
         boolean b1 = true; // rue -> Rejouer, False = Quitter le jeu
         boolean b2 ; // Controle de saisie True -> erreur, false -> pas d'erreur
         int myChoise; // Choix 1 ou 2 pour rejouer ou quitter
-        String myChoiseStr; // Choix au format string pour le control de saisie
+        String myChoiseStr =""; // Choix au format string pour le control de saisie
 
         do {
-            System.out.println("Rejouer une partie ? : Taper : 1 = oui ou 2 = non");
-            myChoiseStr = sc.nextLine();
-            b2 = controls.run(myChoiseStr); // Controle de saisie : true -> erreur trouvée (char et non int)
-            if (!b2) {
-                myChoise = Integer.parseInt(myChoiseStr);
-                switch (myChoise) {
-                    case 1:
-                        b1 = true;
-                        break;
-                    case 2:
-                        System.out.println("[FIN DE PARTIE]");
-                        logger.info("[FIN DE PARTIE] game.replay ");
-                        b1 = false;
-                        break;
+            try {
+                System.out.println("Rejouer une partie ? : Taper : 1 = oui ou 2 = non");
+                myChoiseStr = sc.nextLine();
+                b2 = controls.run(myChoiseStr); // Controle de saisie : true -> erreur trouvée (char et non int)
+                if (!b2) {
+                    myChoise = Integer.parseInt(myChoiseStr);
+                    switch (myChoise) {
+                        case 1:
+                            b1 = true;
+                            break;
+                        case 2:
+                            System.out.println("[FIN DE PARTIE]");
+                            logger.info("[FIN DE PARTIE] game.replay ");
+                            b1 = false;
+                            break;
+                    }
                 }
+            } catch (Exception NumberFormatException){
+
             }
         } while (!myChoiseStr.equals("1") && !myChoiseStr.equals("2")); //(!b2)
         return b1;
