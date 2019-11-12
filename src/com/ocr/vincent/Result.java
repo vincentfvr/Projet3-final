@@ -2,6 +2,8 @@ package com.ocr.vincent;
 
 import org.apache.log4j.Logger;
 
+import java.util.Scanner;
+
 public class Result {
 
     private static Logger logger = Logger.getLogger(Combination.class);
@@ -57,4 +59,27 @@ public class Result {
         }
         return gameIsOver;
     }
+
+    public String ask (String reply, int len, String secret, String input) {
+
+        Scanner sc = new Scanner(System.in);
+        String myReply;
+
+        System.out.println("Combinaison -> " + secret);
+        System.out.println("Résultat ? ");
+        logger.info("Résultat ? Secret : " + secret + "Suggestion : " + input);
+        do {
+            myReply = sc.nextLine(); // scanner
+            if (myReply.length() != len) { // Control du nombre de caractères saisis
+                System.out.println("Saisir le résultat pour la combinaison de " + len + " chiffre(s) (+ ou - ou =)");
+                logger.info("[ERREUR DE SAISIE] : nombre de caractères");
+            } else if (!myReply.equals(reply)) {
+                System.out.println("Saisir le bon résultat. Le résultat proposé est incorrect");
+                logger.info("[ERREUR DE SAISIE] : Le résultat proposé est incorrect");
+            }
+        } while (!myReply.equals(reply));
+        return myReply;
+    }
+
+
 }

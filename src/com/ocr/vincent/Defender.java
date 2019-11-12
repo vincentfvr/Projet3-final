@@ -11,13 +11,15 @@ public class Defender extends Mode{
     public void run(String player, int len) {
         System.out.println("Saisir une combinaison de " + len + " chiffre(s) (entre 1 et 9) et valider avec Entrée");
         secret = combination.ask(len); // combination secrète du joueur USER
+        String myReply ="";
 
         do {
             nbTry += 1;
             input = combination.find(len);
             combination.display (input, player, nbTry);
             reply = combination.compare(secret, input, player, len);
-            gameIsOver = result.run(player, secret, reply , Settings.winReply, gameIsOver, nbTry);
+            myReply = result.ask(reply, len, secret, input);
+            gameIsOver = result.run(player, secret, myReply , Settings.winReply, gameIsOver, nbTry);
         } while (!gameIsOver);
     }
 }

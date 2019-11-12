@@ -14,52 +14,104 @@ public class Dual {
 
         Combination combination = new Combination();
         Result result = new Result();
-        int nbTry = 0;
+        int userTry = 0;
+        int cpuTry = 0;
         boolean gameIsOver = false;
+        String userReply; // Résultat après comparaison (+ - =)
+        String cpuReply; // Résultat après comparaison (+ - =)
+        String inputReply ="";
+        String player1 = this.firstPlayer();
+        String player2 ="";
+        if (player1.equals("USER")) {
+            player2 = "CPU";
+        } else if (player1.equals("CPU")){
+            player2 = "USER";
+        }
 
-        System.out.println("Création de ma combinaison :");
-
-        String userSecret = combination.ask(len);  // Combinaison secrète saisie par l'utilisateur
         String cpuSecret = combination.generate(len); // combinaison secrète générée aléatoirement par CPU
+        System.out.println("Joueur CPU a créé sa combinaison");
+        System.out.println("Création de ma combinaison :");
+        String userSecret = combination.ask(len);  // Combinaison secrète saisie par l'utilisateur
 
         logger.info("combination.ask : userSecret = " + userSecret);
         logger.info("combination.generate : cpuSecret = " + cpuSecret);
 
-        String userReply; // Résultat après comparaison (+ - =)
-        String cpuReply; // Résultat après comparaison (+ - =)
-
-        System.out.println("Joueur CPU a créé sa combinaison");
         combination.solution(cpuSecret); // en mode DEV
+        String player = player1;
 
         do {
-            nbTry += 1;
-            System.out.println("Saisir votre suggestion :");
-            String userInput = combination.ask(len);
-            String cpuInput = combination.find(len);
-            logger.info("combination.ask : userInput = " + userInput);
-            logger.info("combination.generate : cpuInput = " + cpuInput);
-            String player;
 
-            if (!gameIsOver) {
+            if (!gameIsOver & player.equals("CPU")) {
                 // TOUR ORDINATEUR
-                System.out.println("----------------------------------");
-                player = "CPU";
-                combination.display(cpuInput, player, nbTry);
+                cpuTry += 1;
+                String cpuInput = combination.find(len);
+                logger.info("combination.generate : cpuInput = " + cpuInput);
+                //System.out.println("----------------------------------");
+                //player = "CPU";
+                combination.display(cpuInput, player, cpuTry);
                 cpuReply = combination.compare(userSecret, cpuInput, player, len);
+                inputReply = result.ask(cpuReply, len, userSecret, cpuInput);
                 logger.info("combination.compare : cpuReply = " + cpuReply);
-                gameIsOver = result.run(player, userSecret, cpuReply , Settings.winReply, gameIsOver, nbTry);
+                gameIsOver = result.run(player, userSecret, inputReply , Settings.winReply, gameIsOver, cpuTry);
             }
 
-            if (!gameIsOver){
+            if (!gameIsOver & player.equals("USER")){
                 // TOUR UTILISATEUR
-                System.out.println("----------------------------------");
-                player ="USER";
-                combination.display(userInput, player, nbTry);
+                userTry += 1;
+                System.out.println("Saisir votre suggestion :");
+                String userInput = combination.ask(len);
+                logger.info("combination.ask : userInput = " + userInput);
+                //System.out.println("----------------------------------");
+                //player ="USER";
+                combination.display(userInput, player, userTry);
                 userReply = combination.compare(cpuSecret, userInput, player, len);
                 logger.info("combination.compare : userReply = " + userReply);
-                gameIsOver = result.run(player, cpuSecret, userReply , Settings.winReply, gameIsOver, nbTry);
-                System.out.println("----------------------------------");
+                gameIsOver = result.run(player, cpuSecret, userReply , Settings.winReply, gameIsOver, userTry);
+                //System.out.println("----------------------------------");
+            }
+
+            if (player.equals(player1)) {
+                player = player2;
+            } else if (player.equals(player2)){
+                player = player1;
             }
         } while (!gameIsOver);
+    }
+
+    /**
+     * Choix du joueur qui commencera en premier de jouer
+     * @return player1 "USER ou "CPU"
+     */
+    private String firstPlayer() {
+           String player1;
+            int min = 1;
+            int max = 6;
+            int userValue;
+            int cpuValue;
+            int values[] = new int [4];
+
+            do {
+                values[0] = min + (int)(Math.random() * ((max - min) + 1));
+                values[1] = min + (int)(Math.random() * ((max - min) + 1));
+                values[2] = min + (int)(Math.random() * ((max - min) + 1));
+                values[3] = min + (int)(Math.random() * ((max - min) + 1));
+                userValue = values[0] + values[1];
+                cpuValue = values[2] + values[3];
+                if (cpuValue==userValue) {
+                    System.out.println("USER -> " + values[0] + " et " + values[1] + " CPU -> " + values[2] + " et " + values[3]);
+                    System.out.println("Egalité, nouveau jet de dés");
+                } else {
+                    System.out.println("Jet de dés : [USER] -> " + values[0] + " et " + values[1] + " [CPU] --> " + values[2] + " et " + values[3]);
+                }
+            } while (cpuValue==userValue);
+            if (cpuValue>userValue) {
+                player1 = "CPU";
+            } else {
+                player1 = "USER";
+            }
+        System.out.println("[" + player1  + "] jouera en premier");
+        logger.info("Random : USER -> " + values[0] + " et " + values[1] + "Random : CPU --> " + values[2] + " et " + values[3]);
+        logger.info("[" + player1 + "] jouera en premier");
+        return player1;
     }
 }
