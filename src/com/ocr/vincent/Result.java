@@ -51,16 +51,18 @@ public class Result {
                 System.out.println("La bonne combinaison était : " + secret);
                 logger.info("[PARTIE PERDUE] La bonne combinaison était : " + secret);
             }
-            /**else {
-                if (player=="USER"){
-                    System.out.println(newLine + "[NOUVEL ESSAI] (" + (nbTry + 1) + "/" + Settings.nbTryLimit + ")");
-                    logger.info("[NOUVEL ESSAI] (" + (nbTry + 1) + "/" + Settings.nbTryLimit + ")");
-                }
-            } */
         }
         return gameIsOver;
     }
 
+    /**
+     * Demande à l'utilisateur de saisir le résultat de la suggestion du CPU
+     * @param reply (contient la réponse correcte)
+     * @param len (longueur de la combinaison)
+     * @param secret (Combinaison de USER à trouver)
+     * @param input (combinaison suggèrée par CPU)
+     * @return myReply : réponse saisie par l'utilisateur
+     */
     public String ask (String reply, int len, String secret, String input) {
 
         Scanner sc = new Scanner(System.in);

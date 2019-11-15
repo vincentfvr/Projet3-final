@@ -2,9 +2,6 @@ package com.ocr.vincent;
 
 import org.apache.log4j.Logger;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
-
 public class Dual {
 
     private static Logger logger = Logger.getLogger(Combination.class);
