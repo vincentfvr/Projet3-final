@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Result {
 
-    private static Logger logger = Logger.getLogger(Combination.class);
+    private static Logger logger = Logger.getLogger(Result.class);
 
     /**
      * Résultat fin de partie : Partie gagnée, nouvel essai ou partie perdue (nombre d'essais dépassé)
@@ -70,7 +70,7 @@ public class Result {
 
         System.out.println("Combinaison -> " + secret);
         System.out.println("Résultat ? ");
-        logger.info("Résultat ? Secret : " + secret + "Suggestion : " + input);
+        logger.info("Résultat ? Secret : " + secret + " Suggestion : " + input);
         do {
             myReply = sc.nextLine(); // scanner
             if (myReply.length() != len) { // Control du nombre de caractères saisis

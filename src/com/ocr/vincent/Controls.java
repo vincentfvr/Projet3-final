@@ -4,7 +4,7 @@ import org.apache.log4j.Logger;
 
 public class Controls {
 
-    private static Logger logger = Logger.getLogger(Combination.class);
+    private static Logger logger = Logger.getLogger(Controls.class);
 
     /**
      * Input Control : char by char isDigit

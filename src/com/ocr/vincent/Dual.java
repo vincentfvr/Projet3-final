@@ -4,7 +4,7 @@ import org.apache.log4j.Logger;
 
 public class Dual {
 
-    private static Logger logger = Logger.getLogger(Combination.class);
+    private static Logger logger = Logger.getLogger(Dual.class);
 
     /**
      * LANCEMENT DU MODE DUEL MODE 3

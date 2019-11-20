@@ -5,7 +5,7 @@ import org.apache.log4j.Logger;
 
 public class Game {
 
-    private static Logger logger = Logger.getLogger(Combination.class);
+    private static Logger logger = Logger.getLogger(Game.class);
 
     /**
      * LANCEMENT DU JEU : Choix du mode
@@ -60,7 +60,8 @@ public class Game {
                     }
                 }
             } catch (Exception NumberFormatException) {
-
+                System.out.println("Erreur de saisie : Taper 1, 2 ou 3");
+                logger.info("[Erreur de saisie] choix du mode");
             }
         } while (mode < 1 || mode > 4);
     }
@@ -97,7 +98,8 @@ public class Game {
                     }
                 }
             } catch (Exception NumberFormatException){
-
+                System.out.println("Erreur de saisie : Taper 1, 2");
+                logger.info("[Erreur de saisie] choix rejouer ou quitter");
             }
         } while (!myChoiseStr.equals("1") && !myChoiseStr.equals("2")); //(!b2)
         return b1;
